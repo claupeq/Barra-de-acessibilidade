@@ -1,8 +1,5 @@
-<!-- Leaflet CSS para o mapa -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    
-    <!-- Chart.js para gráficos -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+/* --Leaflet CSS para o mapa -- */
+  
 
   
         body {
