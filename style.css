@@ -1,0 +1,247 @@
+<!-- Leaflet CSS para o mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    
+    <!-- Chart.js para gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F1F1F1;
+            color: #333;
+        }
+
+	.weather-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #000;
+    text-align: center;
+}
+
+.weather-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.view-forecast-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.view-forecast-btn:hover {
+    background-color: #45a049;
+}
+
+.weather-body p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+#view-forecast-btn {
+    margin-top: 10px;
+}
+
+
+        .card {
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .card-header {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .card-body {
+            background-color: #FFFFFF;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 3rem;
+            color: black;
+            z-index: 10;
+            position: relative;
+        }
+	 h2 {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1rem;
+            color: black;
+            z-index: 30;
+            position: relative;
+        }
+
+        .header-banner {
+            background: url('mapamundi.jpg') center no-repeat;
+            background-size: cover;
+            height: 250px;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        footer {
+            background-color: #0061F2;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #00B140;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo para o mapa */
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+	 
+	/* Estilo para os gráficos */
+        .chart-container {
+            position: relative;
+            height: 300px;
+            width: 100%;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .card {
+                margin: 10px 0;
+            }
+        }
+
+
+
+        /* Estilo para a barra de acessibilidade */
+        .accessibility-bar {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            top: 50px;
+            right: 20px;
+            z-index: 1000;
+            display: none;
+            border-radius: 10px;
+            width: 250px;
+        }
+
+        .accessibility-bar button {
+            background-color: #0061F2;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-bottom: 5px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .accessibility-bar button:hover {
+            background-color: #0051b3;
+        }
+
+        .accessibility-bar button i {
+            margin-right: 8px;
+        }
+
+        .accessibility-toggle {
+            background-color: #0061F2;
+            color: white;
+            padding: 10px;
+            border: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .accessibility-toggle i {
+            font-size: 20px;
+        }
+
+        /* Estilo para o modo daltônico */
+        .high-contrast {
+            background-color: #000;
+            color: #FFF;
+        }
+
+        .dalttonic-mode {
+            filter: grayscale(100%) contrast(200%);
+        }
+
+        /* Contrastes para tipos de Daltonismo */
+        .protanopia-mode {
+            filter: grayscale(100%) contrast(200%) sepia(100%) saturate(50%);
+        }
+
+        .deuteranopia-mode {
+            filter: grayscale(100%) contrast(200%) sepia(100%) saturate(150%);
+        }
+
+        .tritanopia-mode {
+            filter: grayscale(100%) contrast(200%) sepia(100%) saturate(30%);
+        }
+
+        /* Estilo para a cotação das criptomoedas */
+        #cryptoPrices {
+            margin-top: 20px;
+        }
+
+        .crypto-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .crypto-list li {
+            margin: 5px 0;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .card {
+                margin: 10px 0;
+            }
+        }
+   
